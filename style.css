@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.top {
+  background-image: url(img/header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.top__welcome {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 78px;
+  color: #FFFFFF;
+  padding-top: 217px;
+  padding-bottom: 32px;
+}
+.top__introduction {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+  padding-bottom: 44px;
+}
+.top__button_button {
+  background: #9C0332;
+  border-radius: 30px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  width: 234.06px;
+  height: 48.6px;
+  border: none;
+}
+.top__button_button:hover {
+  background: #EB443F;
+}
+
+.plays {
+  padding-top: 128px;
+  padding-bottom: 128px;
+  background: #000915;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+.plays__item {
+  width: 378px;
+  height: 300px;
+  border-radius: 20px;
+}
+.plays__item:hover {
+  border: 3px solid #44D2FF;
+}
+.plays__1 {
+  background-image: url(img/cube1.jpg);
+}
+.plays__2 {
+  background-image: url(img/cube2.jpg);
+}
+.plays__3 {
+  background-image: url(img/cube3.jpg);
+}
+.plays__play {
+  display: block;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
+  padding-left: 32px;
+  padding-top: 235px;
+}
+
+.seasons {
+  background: #000915;
+  padding-top: 233px;
+  padding-bottom: 233px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.seasons__content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.seasons__content_header {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: #FFFFFF;
+}
+.seasons__content_text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+  max-width: 584px;
+}
+.seasons__content_button {
+  width: 234.06px;
+  height: 48.6px;
+  background: #9C0332;
+  border-radius: 30px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  outline: none;
+  border: none;
+}
+.seasons__content_button:hover {
+  background: #EB443F;
+}
+
+.puzzles {
+  padding-top: 276px;
+  padding-bottom: 288px;
+  background-image: url(img/game-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.puzzles__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.puzzles__content_text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.footer {
+  background: #000915;
+  padding-top: 33px;
+  padding-bottom: 33px;
+}
+.footer_text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+@media (max-width: 1265px) {
+  .center {
+    padding-left: calc(50% - 393px);
+    padding-right: calc(50% - 393px);
+  }
+  .plays {
+    -moz-column-gap: 29px;
+         column-gap: 29px;
+    row-gap: 29px;
+  }
+  .seasons {
+    justify-content: center;
+    gap: 64px;
+  }
+  .seasons__content {
+    align-items: center;
+  }
+  .seasons__content_text {
+    text-align: center;
+  }
+  .seasons_2 {
+    flex-wrap: wrap-reverse;
+  }
+}
+@media (max-width: 833px) {
+  .center {
+    padding-left: calc(50% - 359.5px);
+    padding-right: calc(50% - 359.5px);
+  }
+  .plays__item {
+    width: 343px;
+  }
+}
+@media (max-width: 767px) {
+  .center {
+    padding-left: calc(50% - 171.5px);
+    padding-right: calc(50% - 171.5px);
+  }
+  .top__welcome {
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+  }
+  .top__introduction {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .top__button {
+    display: flex;
+    justify-content: center;
+  }
+  .seasons__content_header {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .seasons__content_text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .puzzles__content_text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+  }
+}/*# sourceMappingURL=style.css.map */

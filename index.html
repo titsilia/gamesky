@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Урок 5</title>
+</head>
+<body>
+  <div class="top center">
+    <p class="top__welcome">
+      Добро пожаловать на мой сайт!
+    </p>
+    <p class="top__introduction">
+      Вам предстоит пройти несколько увлекательных игр.
+       Если готов нажимай <b>поехали</b> и <b>приступай</b>
+    </p>
+    <div class="top__button">
+      <a href="#go">
+        <button class="top__button_button">
+          Поехали!
+        </button>
+      </a>
+    </div>
+  </div>
+
+  <div id="go" class="plays center">
+    <div class="plays__item plays__1">
+      <a href="#game1" class="plays__play">Игра 1</a>
+    </div>
+    <div class="plays__item plays__2">
+      <a href="#game2" class="plays__play">Игра 2</a>
+    </div>
+    <div class="plays__item plays__3">
+      <a href="#game3" class="plays__play">Игра 3</a>
+    </div>
+  </div>
+
+  <div id="game1" class="seasons center">
+      <div class="seasons__content">
+        <p class="seasons__content_header">Времена года!</p>
+        <p class="seasons__content_text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
+        <button onclick="game1()" class="seasons__content_button">Играть!</button>
+      </div>
+      <img src="img/game-1.svg" alt="">
+  </div>
+
+  <div id="game2" class="seasons seasons_2 center">
+    <img src="img/game-2.svg" alt="">
+    <div class="seasons__content">
+      <p class="seasons__content_header">Запомни слова </p>
+      <p class="seasons__content_text">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо запомнить.</p>
+      <button onclick="game2()" class="seasons__content_button">Играть!</button>
+    </div>
+</div>
+
+<div id="game3" class="puzzles center">
+  <div class="puzzles__content">
+    <p class="seasons__content_header">Игра в загадки</p>
+    <p class="puzzles__content_text">Компьютер загадывает загадку, вам необходимо ее угадать, если вы дадите не правильный ответ, то компьютер даст вам подсказку. У вас будет три попытки и две подсказки.</p>
+    <button onclick="game3()" class="seasons__content_button">Играть!</button>
+  </div>
+</div>
+<footer>
+  <div class="footer center">
+    <p class="footer_text">Все права защищены</p>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

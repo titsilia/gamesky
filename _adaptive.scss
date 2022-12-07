@@ -1,0 +1,83 @@
+@media (max-width: 1265px) {
+  .center {
+    padding-left: calc(50% - 393px);
+    padding-right: calc(50% - 393px);
+  }
+
+  .plays {
+    column-gap: 29px;
+    row-gap: 29px;
+  }
+
+  .seasons {
+    justify-content: center;
+    gap: 64px;
+    &__content {
+      align-items: center;
+      &_text {
+        text-align: center;
+      }
+    } 
+    &_2 {
+      flex-wrap: wrap-reverse;
+    }
+  }
+}
+
+@media (max-width: 833px) {
+  .center {
+    padding-left: calc(50% - 719px/2);
+    padding-right: calc(50% - 719px/2);
+  }
+
+  .plays__item {
+    width: 343px;
+  }
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: calc(50% - 343px/2);
+    padding-right: calc(50% - 343px/2);
+  }
+  .top {
+    &__welcome {
+      font-size: 32px;
+      line-height: 39px;
+      text-align: center;
+    }
+    &__introduction {
+      font-size: 14px;
+      line-height: 22px;
+      text-align: center;
+    }
+    &__button {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .seasons {
+    &__content {
+      &_header {
+        font-size: 32px;
+        line-height: 39px;
+      }
+      &_text {
+        font-size: 14px;
+        line-height: 22px;
+      }
+    }
+  }
+
+  .puzzles {
+    &__content {
+      &_text {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 22px;
+        color: #FFFFFF;
+      }
+    }
+  }
+}
